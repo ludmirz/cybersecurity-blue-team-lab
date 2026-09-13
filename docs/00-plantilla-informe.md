@@ -1,7 +1,7 @@
 # [Número] - [Título de la práctica]
 
 **Fecha:** AAAA-MM-DD
-**Autor:** [Tu nombre]
+**Autor:** Ludmila Belén Ramirez
 **Categoría:** Hardening / Detección / Respuesta a incidentes / Otro
 
 ---
