@@ -1,7 +1,7 @@
 # 01 - Armado de la topología de red del lab
 
 **Fecha:** 2026-09-13
-**Autor:** [Tu nombre]
+**Autor:** Ludmila Belén Ramirez
 **Categoría:** Infraestructura
 
 ---
@@ -54,13 +54,28 @@ ping <ip_de_la_otra_maquina>
 
 ## 5. Hallazgos / Resultados
 
-*(Completar con las IPs reales asignadas por DHCP y el resultado del ping,
-una vez confirmadas.)*
-
 | Máquina | IP asignada |
 |---|---|
-| Kali Linux | 10.0.2.x |
-| Ubuntu Server | 10.0.2.x |
+| Kali Linux | 10.0.2.3 |
+| Ubuntu Server | 10.0.2.9 |
+
+Prueba de conectividad desde Kali hacia Ubuntu Server:
+
+```
+$ ping 10.0.2.9 -c 4
+PING 10.0.2.9 (10.0.2.9) 56(84) bytes of data.
+64 bytes from 10.0.2.9: icmp_seq=1 ttl=64 time=0.070 ms
+64 bytes from 10.0.2.9: icmp_seq=2 ttl=64 time=0.031 ms
+64 bytes from 10.0.2.9: icmp_seq=3 ttl=64 time=0.032 ms
+64 bytes from 10.0.2.9: icmp_seq=4 ttl=64 time=0.076 ms
+
+--- 10.0.2.9 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3073ms
+rtt min/avg/max/mdev = 0.031/0.052/0.076/0.020 ms
+```
+
+Conectividad confirmada: 0% de pérdida de paquetes y latencia mínima
+(~0.05 ms), consistente con dos máquinas en el mismo segmento de red virtual.
 
 ## 6. Análisis
 
