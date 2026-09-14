@@ -1,7 +1,7 @@
 # 02 - Hardening básico del servidor Ubuntu
 
 **Fecha:** 2026-09-13
-**Autor:** [Tu nombre]
+**Autor:** Ludmila Belén Ramirez
 **Categoría:** Hardening
 
 ---
